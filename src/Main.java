@@ -23,28 +23,28 @@ public class Main {
         // Calculations for the tip
         tipPercentage /= 100;
         tipAmount = tipPercentage * billAmount;
-        String results = String.format("%.2f", tipAmount); // Rounds to the hundredths
-        System.out.println("Total Tip Amount: $" + results);
+        String tipCost = String.format("%.2f", tipAmount); // Rounds to the hundredths
+        System.out.println("Total Tip Amount: $" + tipCost);
         System.out.println("---------------------------");
-        double tipAmounts = Double.parseDouble(results); // Converts String to double
+        double tipAmounts = Double.parseDouble(tipCost); // Converts String to double
 
         // Total bill cost
         billAmount += tipAmounts;
-        String result2 = String.format("%.2f", billAmount);  // Rounds to the hundredths
-        System.out.println("Total Bill Cost: $" + result2);
+        String billCost = String.format("%.2f", billAmount);  // Rounds to the hundredths
+        System.out.println("Total Bill Cost: $" + billCost);
         System.out.println("---------------------------");
-        double billAmounts = Double.parseDouble(result2);  // Converts String to double
+        double billAmounts = Double.parseDouble(billCost);  // Converts String to double
 
         //Tip per person
         tipPerson = tipAmounts/peopleAmount;
-        String result3 = String.format("%.2f", tipPerson);  // Rounds to the hundredths
-        System.out.println("Tip per person: $" + result3);
+        String tipPerPerson = String.format("%.2f", tipPerson);  // Rounds to the hundredths
+        System.out.println("Tip per person: $" + tipPerPerson);
         System.out.println("---------------------------");
 
         // Total Bill per person
         billAmounts /= peopleAmount;
-        String result4 = String.format("%.2f", billAmounts); // Rounds to the hundredths
-        System.out.println("Total bill per person: $" + result4);
+        String totalBill = String.format("%.2f", billAmounts); // Rounds to the hundredths
+        System.out.println("Total bill per person: $" + totalBill);
         System.out.println("---------------------------");
 
         }
